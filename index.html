@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinayak Gupta | Full-Stack Software Engineer</title>
+  <meta name="description" content="Portfolio of Vinayak Gupta, Full-Stack Software Engineer specializing in scalable web systems, cloud architectures, and modern interfaces." />
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====================================================================
+       NAVBAR
+       ==================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">V</div>
+        <span><span class="dyn-name">Vinayak Gupta</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Resume Trigger Button -->
+        <button class="btn btn-sm btn-primary" data-modal-target="resume-modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>Resume</span>
+        </button>
+
+        <!-- Theme Toggle (Light / Dark) -->
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme" title="Toggle Theme">
+          <span id="theme-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+          </span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-toggle" class="btn-icon mobile-toggle" aria-label="Open Menu">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       HERO SECTION
+       ==================================================================== -->
+  <main>
+    <section id="about" class="section hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="status-pill">
+              <span class="pulse-dot"></span>
+              <span id="status-badge-text">Available for Full-time Roles & High-Impact Projects</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text dyn-name">Vinayak Gupta</span>.<br />
+              <span class="dyn-role">Full-Stack Software Engineer</span>
+            </h1>
+
+            <p id="hero-tagline" class="hero-tagline">
+              Architecting scalable web applications, robust distributed backends, and pixel-perfect user experiences.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                Explore Projects
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <button class="btn btn-secondary btn-lg" data-modal-target="resume-modal">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download / View Resume
+              </button>
+
+              <a href="#contact" class="btn btn-outline btn-lg">
+                Get In Touch
+              </a>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <a href="mailto:vinayakgupta5770@gmail.com" class="social-link" title="Direct Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Stats Bento -->
+        <div id="stats-grid" class="stats-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CERTIFICATIONS & CREDENTIALS SECTION (Requested Highlight)
+         ==================================================================== -->
+    <section id="certifications" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            Verified Credentials
+          </span>
+          <h2 class="section-title">Certifications & Accreditations</h2>
+          <p class="section-subtitle">
+            Industry-recognized credentials validating advanced capabilities in cloud architecture, distributed systems, and modern software engineering.
+          </p>
+        </div>
+
+        <div id="certifications-grid" class="cert-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         FEATURED PROJECTS SECTION
+         ==================================================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Engineering Work</h2>
+          <p class="section-subtitle">
+            A selection of production-ready systems, full-stack web applications, and developer tools built with a focus on reliability, UX, and scale.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+          <button class="filter-btn" data-filter="frontend">Frontend & WebSockets</button>
+          <button class="filter-btn" data-filter="cloud">Cloud & DevOps</button>
+        </div>
+
+        <div id="projects-grid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SKILLS & TECHNOLOGIES SECTION
+         ==================================================================== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Expertise</span>
+          <h2 class="section-title">Skills & Modern Tech Stack</h2>
+          <p class="section-subtitle">
+            Core technologies and tools I employ to design, build, and deploy production software.
+          </p>
+        </div>
+
+        <div id="skills-grid" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         WORK EXPERIENCE & TIMELINE SECTION
+         ==================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">
+            Track record of shipping impactful software, optimizing distributed platforms, and collaborating in agile teams.
+          </p>
+        </div>
+
+        <div id="experience-timeline" class="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         CONTACT SECTION
+         ==================================================================== -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+          <p class="section-subtitle">
+            Whether you have an open full-time position, a technical consulting project, or just want to chat about engineering, feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info-card">
+            <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Contact Information</h3>
+
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-title">Direct Email</div>
+                <a href="mailto:vinayakgupta5770@gmail.com" class="contact-method-val">vinayakgupta5770@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-title">Location</div>
+                <div class="contact-method-val">San Francisco, CA (Open to Remote)</div>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-method-title">Response Time</div>
+                <div class="contact-method-val">Typically responds within 24 hours</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+              <button class="btn btn-outline" style="width: 100%;" data-modal-target="resume-modal">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                View Full Printable Resume
+              </button>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Jane Doe" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-input" placeholder="e.g. jane@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="e.g. Engineering Opportunity / Project Inquiry" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-textarea" placeholder="Tell me about your team, tech stack, or project requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       FOOTER
+       ==================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="logo">
+        <div class="logo-icon">V</div>
+        <span class="dyn-name">Vinayak Gupta</span>
+      </div>
+
+      <p class="footer-copy">
+        © <span id="current-year">2026</span> <span class="dyn-name">Vinayak Gupta</span>. Designed with a clean & crisp aesthetic. Built for speed and accessibility.
+      </p>
+
+      <a href="#" class="btn btn-sm btn-secondary" style="margin-top: 0.5rem;">
+        Back to Top ↑
+      </a>
+    </div>
+  </footer>
+
+  <!-- ====================================================================
+       MODAL: INTERACTIVE ATS RESUME VIEWER & PDF DOWNLOAD
+       ==================================================================== -->
+  <div id="resume-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Professional Resume</h3>
+        <button class="modal-close" aria-label="Close Modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div id="resume-content-area"></div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="copyResumeSummary()">
+          📋 Copy Text Summary
+        </button>
+        <button class="btn btn-primary" onclick="printResume()">
+          🖨️ Print / Save as PDF
+        </button>
+        <button class="btn btn-secondary modal-close-btn">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL: PROJECT CASE STUDY
+       ==================================================================== -->
+  <div id="case-study-modal" class="modal-overlay">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 id="case-study-title" class="modal-title">Project Case Study</h3>
+        <button class="modal-close" aria-label="Close Modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div id="case-study-body" class="modal-body"></div>
+
+      <div class="modal-footer">
+        <a id="case-study-live-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          Open Live Demo ↗
+        </a>
+        <a id="case-study-repo-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          GitHub Repository
+        </a>
+        <button class="btn btn-secondary modal-close-btn">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="profile-data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
